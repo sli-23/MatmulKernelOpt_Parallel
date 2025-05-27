@@ -1,0 +1,21 @@
+Put discussion here for 2.1
+
+myAllreduce
+
+Summary over 100 runs:
+Some runs produced incorrect results!
+Average MPI.Allreduce time: 0.000218 seconds
+Average myAllreduce time:   0.000142 seconds
+
+Discussion: My implementation is faster than MPI.Allreduce.
+
+
+myAlltoall
+
+Summary over 100 runs:
+All runs produced correct results.
+Average MPI.Alltoall time: 0.000128 seconds
+Average myAlltoall time:   0.000184 seconds
+
+Discussion: My own implementation is slower than MPI.Alltoall. 
+Possible reasons: Python's abstraction layer introduces unavoidable overhead and the non-blocking communication is not implemented correctly.    
