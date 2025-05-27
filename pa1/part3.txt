@@ -1,0 +1,5 @@
+* the intuition behind fused operators: The main intuition behind fused operators is to 1) multiple operations into one, 2) reduced computational resources in the aspect of hardware. The main purpose is to speed up the training speed. 
+
+* why it works for improving efficiency: Fused operators cut down on the number of times data needs to be moved between memory and the processor, and they combine multiple steps into one, which saves time and makes better use of hardware like GPUs.
+
+* potential future improvements to these operators: I'm thinking that an innovative algorithms could dynamically decide which operations to fuse based on runtime conditions, like input size or hardware constraints, for better flexibility and performance.
